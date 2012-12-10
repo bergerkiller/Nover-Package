@@ -8,7 +8,7 @@ public class NoverPackage extends JavaPlugin {
 	}
 
 	/**
-	 * Applies the NoverClassLoader to the plugin class loader chain to get around package version
+	 * Applies the NoverClassLoader to the plugin class loader chain to get around package versioning
 	 * 
 	 * @param pluginClass - main plugin class of your plugin
 	 */
@@ -17,7 +17,7 @@ public class NoverPackage extends JavaPlugin {
 	}
 
 	/**
-	 * Applies the NoverClassLoader to the plugin class loader chain to get around package version
+	 * Applies the NoverClassLoader to the plugin class loader chain to get around package versioning
 	 * 
 	 * @param loader - main plugin classloader of your plugin
 	 */

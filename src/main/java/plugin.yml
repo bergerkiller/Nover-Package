@@ -1,0 +1,6 @@
+name: Nover Package
+main: com.bergerkiller.bukkit.noverpackage.NoverPackage
+version: 1.0
+author: bergerkiller
+load: startup
+description: Allows dynamic package versioning applies to plugins that specify this
