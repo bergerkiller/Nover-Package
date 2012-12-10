@@ -5,11 +5,23 @@ point to the current minecraft-versioned packages. It uses the powerful ASM
 bytecode manipulation library to accomplish this without any noticeable loss 
 of performance. This utility library can be used in multiple ways.
 
+Plugin references to net.minecraft.server and org.bukkit.craftbukkit are automatically 
+redirected to point to an existent package. This means that on a 1.4.5 MC version:
+    net.minecraft.server -> net.minecraft.server.v1_4_5
+    net.minecraft.server.v1_4_5 -> net.minecraft.server.v1_4_5
+    org.bukkit.craftbukkit.v1_5_1 -> org.bukkit.craftbukkit.v1_4_5
+If your plugin is running on a CraftBukkit build prior to the package versioning changes, 
+it will still function. In that case:
+    net.minecraft.server.v1_4_5 -> net.minecraft.server
+    org.bukkit.craftbukkit.v1_5_1 -> org.bukkit.craftbukkit
+This way maximum flexibility is achieved.
+
 Important:
 * You are completely free to use all code used in this library.
 * You do not have to credit me (bergerkiller) for writing this library.
-* I am in no way responsable for any damages of any kind that this library may bring.
+* I am in no way responsable for any damages of any kind that this library may cause.
 * This library uses an altered class loader, and class loader hacks can become unstable.
+* Use this library responsably. Safeguard your code so it won't cause world corruption.
 
 Referencing this library
 -----------------
@@ -45,6 +57,7 @@ Maven
 -------
 
 First, you need access to the code itself. If you use Maven, include the following to your pom.xml:
+    [code todo]
 
 Manual
 -------
