@@ -46,9 +46,11 @@ Static block
 
 Add the following static block of code to your plugin's main class:
 
-    static {
-        NoverPackage.undoPackageVersioning(MyPlugin.class);
-    }
+```java
+static {
+    NoverPackage.undoPackageVersioning(MyPlugin.class);
+}
+```
 
 Change MyPlugin to the main class name of your plugin.
 
@@ -62,7 +64,9 @@ Maven
 
 First, you need access to the code itself. If you use Maven, include the following to your pom.xml:
 
-    [code todo]
+```xml
+<code>todo</code>
+```
 
 Manual
 -------

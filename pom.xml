@@ -27,7 +27,7 @@
       <artifactId>bukkit</artifactId>
       <version>1.4.5-R0.3-SNAPSHOT</version>
       <type>jar</type>
-      <scope>provide</scope>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
