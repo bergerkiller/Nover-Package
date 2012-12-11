@@ -10,8 +10,6 @@ import com.bergerkiller.bukkit.noverpackage.org.objectweb.asm.commons.RemappingC
 
 /**
  * Re-maps class references from non-versioned packages to the correct versioned package<br><br>
- * 
- * <b>Feel free to use NoVerClassLoader and NoVerRemapper in your own plugins</b>
  */
 class NoverRemapper extends Remapper {
 	private static final String[] PACKAGE_ROOTS = {"net/minecraft/server/", "org/bukkit/craftbukkit/"};

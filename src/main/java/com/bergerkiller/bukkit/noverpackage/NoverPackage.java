@@ -2,9 +2,23 @@ package com.bergerkiller.bukkit.noverpackage;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * Main plugin class file to interact with Nover Package
+ */
 public class NoverPackage extends JavaPlugin {
+	/**
+	 * The Minecraft version the current server software is built against<br>
+	 * Check against this version to provide safety for future updates that could
+	 * cause your code to break<br><br>
+	 * 
+	 * This variable is an empty String if no version could be detected (no package versioning used)
+	 */
+	public static final String MC_VERSION;
 	static {
+		MC_VERSION = NoverClassLoader.MC_VERSION;
+		NoverLoaderHook.loadClass();
 		undoPackageVersioning(NoverPackage.class);
+		NoverLoaderHook.init();
 	}
 
 	/**

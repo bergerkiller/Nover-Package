@@ -30,7 +30,6 @@
 
 package com.bergerkiller.bukkit.noverpackage.org.objectweb.asm.commons;
 
-
 import com.bergerkiller.bukkit.noverpackage.org.objectweb.asm.Handle;
 import com.bergerkiller.bukkit.noverpackage.org.objectweb.asm.Type;
 import com.bergerkiller.bukkit.noverpackage.org.objectweb.asm.signature.SignatureReader;

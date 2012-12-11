@@ -9,8 +9,6 @@ import org.bukkit.plugin.java.PluginClassLoader;
 
 /**
  * Redirects package paths to the correct version to fix Class Not Found exceptions<br><br>
- * 
- * <b>Feel free to use NoVerClassLoader and NoVerRemapper in your own plugins</b>
  */
 class NoverClassLoader extends PluginClassLoader {
 	/*
