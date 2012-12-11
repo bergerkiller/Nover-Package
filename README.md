@@ -84,3 +84,9 @@ You place all java files of this library in there in such a way that the root is
 And so on. This is very important: If you do not do the above, you risk the same noverpackage with the same root being used twice.
 This can cause several incompatibilities if one plugin uses an older version than another, so this is to prevent that.
 The maven method automatically takes care of all of this.
+
+For Admins
+-------
+
+You can specify the plugins to load using this library in the config.yml. If you wish to use this library 
+for all plugins running on the server, you can set 'enabledInAllPlugins' to true.
