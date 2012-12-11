@@ -7,13 +7,17 @@ of performance. This utility library can be used in multiple ways.
 
 Plugin references to net.minecraft.server and org.bukkit.craftbukkit are automatically 
 redirected to point to an existent package. This means that on a 1.4.5 MC version:
+
     net.minecraft.server -> net.minecraft.server.v1_4_5
     net.minecraft.server.v1_4_5 -> net.minecraft.server.v1_4_5
     org.bukkit.craftbukkit.v1_5_1 -> org.bukkit.craftbukkit.v1_4_5
+    
 If your plugin is running on a CraftBukkit build prior to the package versioning changes, 
 it will still function. In that case:
+
     net.minecraft.server.v1_4_5 -> net.minecraft.server
     org.bukkit.craftbukkit.v1_5_1 -> org.bukkit.craftbukkit
+    
 This way maximum flexibility is achieved.
 
 Important:
@@ -57,6 +61,7 @@ Maven
 -------
 
 First, you need access to the code itself. If you use Maven, include the following to your pom.xml:
+
     [code todo]
 
 Manual
@@ -64,10 +69,14 @@ Manual
 
 You can copy-paste all the java source files into your plugin's package root.
 For example, if my plugin has package
+
     com.bergerkiller.bukkit.myplugin
+    
 You place all java files of this library in there in such a way that the root is still used:
+
     com.bergerkiller.bukkit.myplugin.noverpackage
     com.bergerkiller.bukkit.myplugin.noverpackage.org.objectweb.asm
+    
 And so on. This is very important: If you do not do the above, you risk the same noverpackage with the same root being used twice.
 This can cause several incompatibilities if one plugin uses an older version than another, so this is to prevent that.
 The maven method automatically takes are of all of this.
