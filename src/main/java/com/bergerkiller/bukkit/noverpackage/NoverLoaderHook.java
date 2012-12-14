@@ -137,7 +137,7 @@ class NoverLoaderHook {
 		@Override
 		public PluginDescriptionFile getPluginDescription(File arg0) throws InvalidDescriptionException {
 			PluginDescriptionFile dfile = super.getPluginDescription(arg0);
-			if (isPluginEnabled(dfile.getName())) {
+			if (isPluginEnabled(dfile.getName()) || dfile.getDepend().contains("NoverPackage")) {
 				// Plugin is enabled by Nover, replace the class loader so it is detected
 				String old = classLoaderOf.get(dfile);
 				if (old == null) {
